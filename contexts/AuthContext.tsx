@@ -3,29 +3,29 @@ import { User, UserRole } from '../types';
 
 // Mock users for demonstration
 const MOCK_USERS: Record<string, User> = {
-  'admin@MEDiRAT.com': {
+  'manager@medmaint.com': {
     id: 'user-1',
     name: 'Dr. Evelyn Reed',
-    email: 'admin@MEDiRAT.com',
+    email: 'manager@medmaint.com',
     role: UserRole.ServiceManager,
     permissions: ['view:dashboard', 'view:equipment', 'add:equipment', 'edit:equipment', 'add:staff', 'acknowledge:notification'],
-    avatarUrl: 'https://i.pravatar.cc/150?u=admin@MEDiRAT.com',
+    avatarUrl: 'https://i.pravatar.cc/150?u=manager@medmaint.com',
   },
-  'tech@MEDiRAT.com': {
+  'tech@medmaint.com': {
     id: 'user-2',
     name: 'John Doe',
-    email: 'tech@MEDiRAT.com',
+    email: 'tech@medmaint.com',
     role: UserRole.Technician,
     permissions: ['view:dashboard', 'view:equipment', 'edit:equipment', 'acknowledge:notification'],
-    avatarUrl: 'https://i.pravatar.cc/150?u=tech@MEDiRAT.com',
+    avatarUrl: 'https://i.pravatar.cc/150?u=tech@medmaint.com',
   },
-  'staff@MEDiRAT.com': {
+  'staff@medmaint.com': {
     id: 'user-3',
     name: 'Jane Smith',
-    email: 'staff@MEDiRAT.com',
+    email: 'staff@medmaint.com',
     role: UserRole.HospitalStaff,
     permissions: ['view:dashboard', 'view:equipment'],
-    avatarUrl: 'https://i.pravatar.cc/150?u=staff@MEDiRAT.com',
+    avatarUrl: 'https://i.pravatar.cc/150?u=staff@medmaint.com',
   },
 };
 

@@ -13,7 +13,7 @@ export const LoginScreen: React.FC = () => {
     setIsLoading(true);
     setError('');
 
-    // Example emails to try: admin@MEDiRAT.com, tech@MEDiRAT.com, staff@MEDiRAT.com
+    // Example emails to try: manager@medmaint.com, tech@medmaint.com, staff@medmaint.com
     const success = await login(email);
     
     if (!success) {
@@ -48,7 +48,7 @@ export const LoginScreen: React.FC = () => {
                 placeholder="you@example.com"
               />
             </div>
-            <p className="mt-2 text-xs text-gray-500">Use: admin@MEDiRAT.com, tech@MEDiRAT.com, or staff@MEDiRAT.com</p>
+            <p className="mt-2 text-xs text-gray-500">Use: manager@medmaint.com, tech@medmaint.com, or staff@medmaint.com</p>
           </div>
 
           <div>
