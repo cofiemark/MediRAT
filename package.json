@@ -1,7 +1,6 @@
 {
   "name": "medical-equipment-risk-assessment-toolkit",
   "homepage": "https://cofiemark.github.io/MEDiRAT/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
