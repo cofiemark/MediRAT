@@ -5,7 +5,7 @@ import { User, UserRole } from '../types';
 const MOCK_USERS: Record<string, User> = {
   'manager@medmaint.com': {
     id: 'user-1',
-    name: 'Dr. Evelyn Reed',
+    name: 'Eng. Mark Cofie',
     email: 'manager@medmaint.com',
     role: UserRole.ServiceManager,
     permissions: ['view:dashboard', 'view:equipment', 'add:equipment', 'edit:equipment', 'add:staff', 'acknowledge:notification'],
@@ -13,7 +13,7 @@ const MOCK_USERS: Record<string, User> = {
   },
   'tech@medmaint.com': {
     id: 'user-2',
-    name: 'John Doe',
+    name: 'Tech. Maame Adjwoa',
     email: 'tech@medmaint.com',
     role: UserRole.Technician,
     permissions: ['view:dashboard', 'view:equipment', 'edit:equipment', 'acknowledge:notification'],
@@ -21,7 +21,7 @@ const MOCK_USERS: Record<string, User> = {
   },
   'staff@medmaint.com': {
     id: 'user-3',
-    name: 'Jane Smith',
+    name: 'Michael Mensah',
     email: 'staff@medmaint.com',
     role: UserRole.HospitalStaff,
     permissions: ['view:dashboard', 'view:equipment'],
