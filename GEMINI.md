@@ -1,14 +1,14 @@
 
-# MedMaint Toolkit: Technical Brief for Gemini AI
+# MEDiRAT Toolkit: Technical Brief for Gemini AI
 
-**Document Purpose:** This document provides a comprehensive technical overview of the "MedMaint Toolkit" application. It is intended to be used as a context file for Large Language Models like Gemini 2.5 Pro to assist in future development, maintenance, deployment, and backend integration tasks.
+**Document Purpose:** This document provides a comprehensive technical overview of the "MEDiRAT Toolkit" application. It is intended to be used as a context file for Large Language Models like Gemini 2.5 Pro to assist in future development, maintenance, deployment, and backend integration tasks.
 
 ---
 
 ## 1. Project Overview
 
 ### 1.1. Application Name
-MedMaint Toolkit
+MEDiRAT Toolkit
 
 ### 1.2. Core Purpose
 A web-based Risk Assessment and Maintenance Management system designed for medical equipment within a hospital or clinical setting.
@@ -138,4 +138,4 @@ The result is then mapped to a `RiskLevel` using the `getRiskLevelFromRPN` funct
     3.  Create a Supabase client in `services/supabaseClient.ts`.
     4.  Generate TypeScript types from the database schema for full type safety.
 
-This document should provide sufficient context for any future AI-assisted development on the MedMaint Toolkit.
+This document should provide sufficient context for any future AI-assisted development on the MEDiRAT Toolkit.

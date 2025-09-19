@@ -58,7 +58,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentView, onSetView, isColl
     return (
        <div className={`flex flex-col h-screen bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 transition-all duration-300 ${isCollapsed ? 'w-20' : 'w-64'}`}>
             <div className={`flex items-center p-4 border-b border-gray-200 dark:border-gray-700 min-h-[72px] ${isCollapsed ? 'justify-center' : 'justify-start'}`}>
-                 {!isCollapsed && <h1 className="text-xl font-bold text-gray-800 dark:text-white">MedMaint</h1>}
+                 {!isCollapsed && <h1 className="text-xl font-bold text-gray-800 dark:text-white">MEDiRAT</h1>}
             </div>
             <nav className="flex-grow p-2">
                 <NavItem icon={<DashboardIcon className="w-6 h-6" />} label="Dashboard" isActive={currentView === 'dashboard'} onClick={() => onSetView('dashboard')} isCollapsed={isCollapsed} />

@@ -1,9 +1,9 @@
 
 ======================================================================
- Supabase Backend Integration Guide for MedMaint Toolkit
+ Supabase Backend Integration Guide for MEDiRAT Toolkit
 ======================================================================
 
-This guide provides a comprehensive walkthrough for connecting the MedMaint Toolkit frontend application to a powerful, scalable backend using Supabase.
+This guide provides a comprehensive walkthrough for connecting the MEDiRAT Toolkit frontend application to a powerful, scalable backend using Supabase.
 
 ---
 ## TABLE OF CONTENTS
@@ -33,7 +33,7 @@ This guide provides a comprehensive walkthrough for connecting the MedMaint Tool
 1.  **Create a Supabase Account:** Go to [supabase.com](https://supabase.com) and sign up for a free account.
 2.  **Create a New Project:**
     -   On your dashboard, click "New project".
-    -   Give your project a name (e.g., `medmaint-toolkit`).
+    -   Give your project a name (e.g., `MEDiRAT-toolkit`).
     -   Generate a secure database password and save it somewhere safe.
     -   Choose a region closest to you.
     -   Click "Create new project" and wait a few minutes for it to be set up.
@@ -213,9 +213,9 @@ Run this script in the **SQL Editor** to populate your database with the same da
 **Important:** Before running this, you need to manually create the three users in Supabase Authentication so their `auth.uid()` values exist.
 1.  Go to **Authentication -> Users** in Supabase.
 2.  Click **"Add user"**. Create three users with the following emails:
-    -   `manager@medmaint.com`
-    -   `tech@medmaint.com`
-    -   `staff@medmaint.com`
+    -   `admin@MEDiRAT.com`
+    -   `tech@MEDiRAT.com`
+    -   `staff@MEDiRAT.com`
     (You can use simple passwords like `password123` for this demo).
 3.  Go back to the **SQL Editor** and run the following script.
 
@@ -223,9 +223,9 @@ Run this script in the **SQL Editor** to populate your database with the same da
 -- Insert public profiles linked to the auth users you just created
 INSERT INTO public.profiles (id, full_name, avatar_url, role)
 VALUES
-    ((SELECT id FROM auth.users WHERE email = 'manager@medmaint.com'), 'Dr. Evelyn Reed', 'https://i.pravatar.cc/150?u=manager@medmaint.com', 'Service Manager'),
-    ((SELECT id FROM auth.users WHERE email = 'tech@medmaint.com'), 'John Doe', 'https://i.pravatar.cc/150?u=tech@medmaint.com', 'Technician'),
-    ((SELECT id FROM auth.users WHERE email = 'staff@medmaint.com'), 'Jane Smith', 'https://i.pravatar.cc/150?u=staff@medmaint.com', 'Hospital Staff');
+    ((SELECT id FROM auth.users WHERE email = 'admin@MEDiRAT.com'), 'Dr. Evelyn Reed', 'https://i.pravatar.cc/150?u=admin@MEDiRAT.com', 'Service Manager'),
+    ((SELECT id FROM auth.users WHERE email = 'tech@MEDiRAT.com'), 'John Doe', 'https://i.pravatar.cc/150?u=tech@MEDiRAT.com', 'Technician'),
+    ((SELECT id FROM auth.users WHERE email = 'staff@MEDiRAT.com'), 'Jane Smith', 'https://i.pravatar.cc/150?u=staff@MEDiRAT.com', 'Hospital Staff');
 
 -- Declare variables to hold equipment UUIDs for easier linking
 DO $$
